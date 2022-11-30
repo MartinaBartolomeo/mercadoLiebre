@@ -1,11 +1,21 @@
 @import url(normalize.css);
+*{box-sizing: border-box;}
 
 body {
   background-color: #ebebeb;
   font-family: 'Roboto', sans-serif;
-  text-align: left;
   font-size: 12px;
 }
+
+main{
+  text-align: center;
+  width: 90%;
+}
+
+article{
+  margin-bottom: 10px;
+}
+
 .logo{
   max-width: 50%;
   padding-left: 10%;
@@ -20,7 +30,8 @@ header {
 .topnav{
   text-align: left;
   font-size: 12px;
-  padding-left: 0.5cm;
+  width: 90%;
+  padding: 10%, 10%;
 }
 
 ul {
@@ -42,32 +53,26 @@ ul {
 
 .cuerpo {
   font-size: 12px;
-  text-align: left;
 }
 
 #cuotas {
   text-align: center;
-
 }
 
 .titular {
   font-size: 24px;
-  text-align: left;
 }
 
 .precio {
   font-size: 18px;
-  text-align: left;
 }
 
 .descuento {
   font-size: 16px;
-  text-align: left;
 }
 
 .descripcion {
   font-size: 16px;
-  text-align: left;
 }
 
 footer{
