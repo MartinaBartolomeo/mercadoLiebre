@@ -1,5 +1,5 @@
 @import url(normalize.css);
-*{box-sizing: border-box;}
+@import url(normalizePersonal.css);
 
 body {
   background-color: #ebebeb;
