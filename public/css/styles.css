@@ -8,9 +8,7 @@ body {
 }
 
 main{
-  text-align: center;
-  width: 100%;
-  padding: 5px;
+  width: 90%;
 }
 
 article{
@@ -19,12 +17,16 @@ article{
 
 .box{
   border-top: 1px solid #ebebeb;
-  padding-bottom: 10px;
-  text-align: center;
+  padding: 15px;
   background-color: white;
-  width: 40%;
-  height: 50%;
   margin:auto;
+}
+
+p.precio, p.descuento{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: left;
 }
 
 .imgArticle{
@@ -74,11 +76,15 @@ ul {
   font-size: 12px;
 }
 
+
+
 #cuotas {
   text-align: center;
 }
 
 .titular {
+  text-align: center;
+  align-items: center;
   font-size: 24px;
   margin: auto;
   padding: 10px;
@@ -86,14 +92,19 @@ ul {
 
 .precio {
   font-size: 18px;
+  width: 30%;
 }
 
 .descuento {
   font-size: 16px;
+  width: 70%;
+  
 }
 
 .descripcion {
   font-size: 16px;
+  color: #666;
+  text-align: left;
 }
 
 footer{
