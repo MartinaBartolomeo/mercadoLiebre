@@ -16,26 +16,10 @@ app.get('/ayuda', (req, res) =>{
     res.sendFile(path.resolve(__dirname, "./views/ayuda.html"))
 });
 
-app.get('/inicioSesion', (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "./views/inicioSesion.html"))
-});
-
-app.get('/inicioSesion', (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "./views/misCompras.html"))
-});
-
-app.get('/inicioSesion', (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "./views/ofertas.html"))
-});
-
-app.get('/inicioSesion', (req, res) =>{
+app.get('/registro', (req, res) =>{
     res.sendFile(path.resolve(__dirname, "./views/registro.html"))
 });
 
-app.get('/inicioSesion', (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "./views/tiendasOficiales.html"))
-});
-
-app.get('/inicioSesion', (req, res) =>{
-    res.sendFile(path.resolve(__dirname, "./views/vender.html"))
+app.get('/login', (req, res) =>{
+    res.sendFile(path.resolve(__dirname, "./views/login.html"))
 });

@@ -12,30 +12,44 @@ main {
   align-items: center;
 }
 
+main, section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+}
 
-.box {
+main, article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border-top: 1px solid #ebebeb;
-  padding: 15px;
+  padding: 5px;
   background-color: white;
   margin: auto;
+  flex-direction: row;
+  align-items: center;
 }
 
 
 .Box2 {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: left;
   position: relative;
+  padding: 5px;
+  margin: auto;
+  width: 100%;
 }
 
 .precio {
-  font-size: 18px;
   width: 30%;
 }
 
 .descuento {
-  font-size: 16px;
   width: 70%;
   color: #39b54a;
 }
@@ -57,7 +71,7 @@ main section article i {
 
 .imgArticle {
   border-bottom: 1px solid #ebebeb;
-  width: 90%;
+  width: 100%;
   display: block;
 }
 
@@ -195,8 +209,12 @@ ul {
   font-size: 16px;
   color: #666;
   text-align: left;
+  padding: 5px;
 }
 
+.descripcion:hover{
+  display: none;
+}
 footer {
   text-align: center;
 }
@@ -247,21 +265,6 @@ footer {
     display: none;
   }
 
-  .box1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: auto;
-  }
-  
-  main, article{
-    text-align: center;
-    padding: 15px;
-  }
-
 }
 
 @media (max-width: 769px) {
@@ -279,31 +282,6 @@ footer {
 
   .buttonBurguer {
     display: none;
-  }
-
-  .box1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: auto;
-  }
-  
-  main, article{
-    text-align: center;
-    padding: 15px;
-  }
-
-  .encabezadoT {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    padding: 10px;
-    align-items: center;
   }
 
   .nave {
@@ -336,6 +314,16 @@ footer {
     width: 40%;
     padding: 0;
     margin: 0;
+  }
+
+  main, section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
   }
 }
 
@@ -360,21 +348,7 @@ footer {
     align-items: center;
   }
 
-  .box1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: auto;
-  }
   
-  main, article{
-    text-align: center;
-    padding: 15px;
-  }
-
   .nave {
     display: flex;
     width: 100%;
@@ -407,4 +381,44 @@ footer {
     margin: 0;
   }
 
+}
+
+/* register */
+
+.registroForm{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+  padding: 15px;
+}
+
+main, label{
+  display: flex;
+  padding: 15px;
+}
+
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+#enviar{
+  font-size: 40px;
+  color: green;
+  width: 50%;
+  align-items: right;
+}
+
+#borrar{
+  font-size: 40px;
+  color: red;
+  width: 50%;
+  align-items: left;
 }
